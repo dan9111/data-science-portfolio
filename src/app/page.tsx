@@ -5,6 +5,7 @@ import { FeaturedProjects } from "@/components/featured-projects";
 import { SkillsGrid } from "@/components/skills-grid";
 import { CertificationsGrid } from "@/components/certifications-grid";
 import { TypingAnimation } from "@/components/typing-animation";
+import { Mail, Github, Linkedin } from "lucide-react";
 
 export default function Home() {
   return (
@@ -172,7 +173,7 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row justify-center gap-6 sm:gap-8">
                 <Link href="mailto:dan80308@gmail.com" className="flex items-center gap-3 group">
                   <div className="size-10 rounded-lg bg-background flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all">
-                    <span className="material-symbols-outlined">mail</span>
+                    <Mail className="size-5" />
                   </div>
                   <div className="flex flex-col">
                     <span className="text-xs text-muted-foreground uppercase font-bold tracking-wider">Email</span>
@@ -183,7 +184,7 @@ export default function Home() {
                 </Link>
                 <Link href="https://github.com/dan9111" target="_blank" className="flex items-center gap-3 group">
                   <div className="size-10 rounded-lg bg-background flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all">
-                    <span className="material-symbols-outlined">code</span>
+                    <Github className="size-5" />
                   </div>
                   <div className="flex flex-col">
                     <span className="text-xs text-muted-foreground uppercase font-bold tracking-wider">GitHub</span>
@@ -194,7 +195,7 @@ export default function Home() {
                 </Link>
                 <Link href="https://www.linkedin.com/in/muhammadzydan" target="_blank" className="flex items-center gap-3 group">
                   <div className="size-10 rounded-lg bg-background flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all">
-                    <span className="material-symbols-outlined">work</span>
+                    <Linkedin className="size-5" />
                   </div>
                   <div className="flex flex-col">
                     <span className="text-xs text-muted-foreground uppercase font-bold tracking-wider">LinkedIn</span>

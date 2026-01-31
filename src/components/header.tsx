@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { ModeToggle } from "@/components/mode-toggle";
+import { Github, Linkedin } from "lucide-react";
 
 export function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -22,7 +23,7 @@ export function Header() {
                     {/* Logo */}
                     <div className="flex items-center gap-4 text-foreground">
                         <div className="size-8 flex items-center justify-center rounded-lg bg-primary/10 text-primary">
-                            <span className="material-symbols-outlined">data_object</span>
+                            <span className="material-symbols-outlined">scatter_plot</span>
                         </div>
                         <h2 className="text-foreground text-lg font-bold leading-tight tracking-tight">
                             Zydan P.
@@ -48,14 +49,14 @@ export function Header() {
                                 target="_blank"
                                 className="flex items-center justify-center rounded-lg size-10 bg-secondary text-foreground hover:bg-primary hover:text-primary-foreground transition-all"
                             >
-                                <span className="material-symbols-outlined">code</span>
+                                <Github className="size-5" />
                             </Link>
                             <Link
                                 href="https://www.linkedin.com/in/muhammadzydan"
                                 target="_blank"
                                 className="flex items-center justify-center rounded-lg size-10 bg-secondary text-foreground hover:bg-primary hover:text-primary-foreground transition-all"
                             >
-                                <span className="material-symbols-outlined">work</span>
+                                <Linkedin className="size-5" />
                             </Link>
                             <ModeToggle />
                         </div>
@@ -93,14 +94,14 @@ export function Header() {
                                 target="_blank"
                                 className="flex items-center justify-center rounded-lg size-10 bg-secondary text-foreground hover:bg-primary hover:text-primary-foreground transition-all"
                             >
-                                <span className="material-symbols-outlined">code</span>
+                                <Github className="size-5" />
                             </Link>
                             <Link
                                 href="https://www.linkedin.com/in/muhammadzydan"
                                 target="_blank"
                                 className="flex items-center justify-center rounded-lg size-10 bg-secondary text-foreground hover:bg-primary hover:text-primary-foreground transition-all"
                             >
-                                <span className="material-symbols-outlined">work</span>
+                                <Linkedin className="size-5" />
                             </Link>
                             <ModeToggle />
                         </div>
