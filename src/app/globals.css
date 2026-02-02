@@ -172,3 +172,48 @@
 .btn-glow:hover {
   box-shadow: 0 0 20px rgba(244, 114, 182, 0.4);
 }
+
+/* Custom Scrollbar - Light Mode */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fce7f3;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f5d0e3;
+  border-radius: 5px;
+  border: 2px solid #fce7f3;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ec4899;
+}
+
+/* Custom Scrollbar - Dark Mode */
+html.dark::-webkit-scrollbar-track {
+  background: #1c1c20;
+}
+
+html.dark::-webkit-scrollbar-thumb {
+  background: #3a3a42;
+  border: 2px solid #1c1c20;
+}
+
+html.dark::-webkit-scrollbar-thumb:hover {
+  background: #f472b6;
+}
+
+/* Firefox scrollbar */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #f5d0e3 #fce7f3;
+}
+
+html.dark {
+  scrollbar-color: #3a3a42 #1c1c20;
+}

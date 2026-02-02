@@ -15,21 +15,21 @@ export default function Home() {
       <main className="flex flex-col items-center w-full pt-16">
         {/* Hero Section */}
         <section className="w-full px-4 md:px-10 lg:px-40 py-12 md:py-20 flex justify-center relative overflow-hidden">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] hero-glow pointer-events-none rounded-full blur-3xl opacity-50"></div>
+
           <div className="flex flex-col max-w-[960px] flex-1 relative z-10">
             <div className="flex flex-col-reverse md:flex-row gap-8 items-center">
               <div className="flex flex-col gap-6 text-center md:text-left flex-1">
-                <h1 className="text-foreground text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight glow-text">
+                <h1 className="text-foreground text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight">
                   Hi, I&apos;m Zydan.<br />
                   <span className="text-gradient">Data Scientist Fresh Graduate.</span>
                 </h1>
                 <div className="text-muted-foreground text-lg font-normal leading-relaxed max-w-xl h-16 md:h-auto">
                   <TypingAnimation
                     words={[
-                      "Transforming raw data into actionable insights.",
+                      "From raw data to insights.",
                       "Building end-to-end data pipelines.",
-                      "Specializing in Python & SQL development.",
-                      "Creating predictive machine learning models."
+                      "Specializing in Python & SQL.",
+                      "Creating predictive models."
                     ]}
                     className="text-muted-foreground"
                   />
@@ -37,7 +37,7 @@ export default function Home() {
                 <div className="flex gap-4 pt-2 justify-center md:justify-start flex-wrap">
                   <Link
                     href="#projects"
-                    className="flex min-w-[140px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-primary text-primary-foreground text-base font-bold transition-transform hover:scale-105 btn-glow"
+                    className="flex min-w-[140px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-primary text-primary-foreground text-base font-bold transition-transform hover:scale-105"
                   >
                     View Projects
                   </Link>
@@ -47,7 +47,7 @@ export default function Home() {
                     className="flex min-w-[140px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-secondary text-foreground text-base font-bold border border-transparent hover:border-primary hover:bg-transparent transition-all gap-2"
                   >
                     <span className="material-symbols-outlined text-xl">download</span>
-                    Download CV
+                    Resume
                   </a>
                   <a
                     href="/portfolio.pdf"
@@ -60,7 +60,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="w-full md:w-1/2 flex justify-center md:justify-end">
-                <div className="relative w-full max-w-[320px] md:max-w-[400px] aspect-square rounded-2xl overflow-hidden shadow-2xl shadow-primary/20 border border-border">
+                <div className="relative w-full max-w-[320px] md:max-w-[400px] aspect-square rounded-2xl overflow-hidden border border-border">
                   <Image
                     src="/avatar.jpg"
                     alt="Muhammad Zydan Priambada"
@@ -153,16 +153,15 @@ export default function Home() {
           <div className="flex flex-col max-w-[960px] flex-1">
             <h2 className="text-foreground text-3xl font-bold mb-8 flex items-center gap-3">
               <span className="text-primary material-symbols-outlined text-3xl">psychology</span>
-              Skills &amp; Technologies
+              Skills
             </h2>
             <SkillsGrid />
           </div>
         </section>
 
         {/* Contact Section */}
-        <section className="w-full px-4 md:px-10 lg:px-40 py-16 flex justify-center relative" id="contact">
-          <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
-          <div className="flex flex-col max-w-[960px] flex-1 z-10">
+        <section className="w-full px-4 md:px-10 lg:px-40 py-16 flex justify-center" id="contact">
+          <div className="flex flex-col max-w-[960px] flex-1">
             <div className="bg-card rounded-2xl border border-border p-8 md:p-12">
               <div className="text-center mb-8">
                 <h2 className="text-foreground text-3xl font-bold mb-4">Let&apos;s Collaborate</h2>
@@ -210,10 +209,7 @@ export default function Home() {
         </section>
       </main>
 
-      {/* Footer */}
-      <footer className="w-full border-t border-border py-8 text-center bg-background z-10">
-        <p className="text-muted-foreground text-xs md:text-sm">© {new Date().getFullYear()} Muhammad Zydan Priambada. All rights reserved.</p>
-      </footer>
+
     </div>
   );
 }

@@ -9,7 +9,7 @@ export function SkillsGrid() {
             {skills.map((skill, index) => (
                 <div
                     key={index}
-                    className="bg-card p-4 rounded-xl border border-border hover:border-primary card-glow transition-all group flex flex-col items-center text-center gap-3"
+                    className="bg-card p-4 rounded-xl border border-border hover:border-primary transition-all group flex flex-col items-center text-center gap-3"
                 >
                     <div className="size-12 rounded-full bg-gray-100 flex items-center justify-center group-hover:scale-110 transition-transform overflow-hidden">
                         <Image
